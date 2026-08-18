@@ -657,12 +657,17 @@ img {
     right: 20px;
     bottom: 20px;
     z-index: 1000;
-    animation: pular 0.8s ease-in-out infinite;
 }
 
 .whatsapp-button img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    display: block;
+    animation: pular 0.8s ease-in-out infinite;
+    transition: transform 0.2s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
 }
 
 @keyframes pular {
@@ -673,13 +678,4 @@ img {
     50% {
         transform: translateY(-15px);
     }
-}
-
-.whatsapp-button img {
-    width: 50px;
-    transition: 0.2s;
-}
-
-.whatsapp-button img:hover {
-    transform: scale(1.1);
 }
